@@ -178,7 +178,7 @@ rm(list = ls())
 cat("\n********* Workspace cleaned *********\n")
 
 ############################################################################
-#### Step 1: Load Libraries
+#### Step 1: Load Required Libraries
 ############################################################################
 
 for (pkg in c("tidyverse", "writexl")) {
@@ -189,7 +189,7 @@ for (pkg in c("tidyverse", "writexl")) {
 }
 
 ############################################################################
-#### Step 2: Settings  — edit these four paths before running
+#### Step 2: Settings : edit these four paths before running 
 ############################################################################
 
 # Directory containing all *hg38_multianno.csv files
@@ -334,7 +334,8 @@ for (i in seq_along(multianno_files)) {
   tryCatch({
 
     ##################################################################
-    # 5a. Load data
+    # 5a. Load data and define the columns preference , we have GT column 
+    # pre added in new pipeline so we are skipping the use of .avinput completely
     ##################################################################
     multianno <- read.csv(input_file, stringsAsFactors = FALSE)
     cat(sprintf("        Loaded : %d variants, %d columns\n",
@@ -560,5 +561,6 @@ write.csv(results_log, log_path, row.names = FALSE)
 cat(sprintf("  Run log saved to: %s\n\n", log_path))
 
 ############################################################################
-#### #### #### #### #### End of Script #### #### #### #### ####
+#### #### #### #### #### Script Ended #### #### #### #### ####
 ############################################################################
+

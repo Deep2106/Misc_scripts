@@ -412,7 +412,8 @@ for (i in seq_along(multianno_files)) {
       "Func.refGene", "Gene.refGene",
       "OMIM", "CeGaT", "Incidentals", "BA_Exception", "RCSI_panel",
       "GeneDetail.refGene", "ExonicFunc.refGene", "AAChange.refGene",
-      "REVEL"
+      "REVEL","SpliceAI_gene","SpliceAI_DS_AG","SpliceAI_DS_AL","SpliceAI_DS_DG","SpliceAI_DS_DL",
+      "SpliceAI_max"
     )
     leading_cols   <- leading_cols[leading_cols %in% colnames(multianno)]
     remaining_cols <- setdiff(colnames(multianno), leading_cols)

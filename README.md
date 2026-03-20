@@ -102,17 +102,17 @@ BA_Exception_List_2018.csv	Gene
 
 All files must be CSV format and gene names are case-insensitive.
 
-##### Output
-Per Patient Output
+## Output
+### Per Patient Output
 
-Each patient generates:
+#### Each patient generates:
 
 <patient_id>_analysis.xlsx  
 
 
-*Excel Sheets*  
+#### *Excel Sheets*  
 
-Sheet	Description:   
+##### Sheet	Description:   
 
 Raw_Data	Full annotated dataset (no filtering)  
 
